@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign-up in Business Account</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="CSS/sign.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c0b2a44661.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-scroll" style="background-color:#001f3c">
+        <div class="container">
+          <img src="images/amazon_business.png" class="navbar-brand" width="150px">
+          <button class="navbar-toggler"
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll" 
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="color:rgb(255, 255, 255);">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto" style="color:white; font-size:13px">
+              <li class="nav-item">
+                <span class="mx-1"><img src="images/filed1.png" width="21px"> ACCOUNT CREATION</span>
+              </li>
+              <li class="nav-item">
+                <span class="mx-1"><img src="images/empity2.png" width="22px"> BUSINESS DETAILS</span>
+              </li>
+              <li class="nav-item">
+                <span class="mx-1"><img src="images/empity3.png" width="22px"> FINISH</span>
+              </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+
+     <!--form-->
+        <form class="d-block my-5 mx-auto generalwidth"style="height:530px;" id="sign" action="Verify_Business.html">
+            <div class="mb-3">
+              <label class="d-block mx-auto mt-3 lead" style="font-weight:500; font-size: 28px; width:294px;">Enter your full name and choose your business password</label>
+              <label for="name" class="form-label mx-auto d-block mt-3" style="font-weight:600;width:289px;font-size: 14px;">Your name</label>
+              <input type="text" class="d-block mx-auto"  id="name" required placeholder="First and last name">
+             
+              <label for="Email" class="form-label mx-auto d-block mt-3" style="font-weight:600;width:289px;font-size: 14px;">Mobile number or email</label>
+              <input type="email" class="d-block mx-auto"  id="Eml" required>
+
+              <lable for="pass" class="form-label mx-auto d-block mt-3" style="font-weight:600;width:289px;font-size: 14px;">Password</lable>
+              <input type="password" class="d-block mx-auto"  id="pass" required placeholder="At least 6 characters">
+              
+              <div  style="font-size:12px;" class="ms-4 mt-1" style="width:295px">
+               <img src="images/letter-i.png" width="22px">
+               <p class="d-inline-block">Passwords must be at least 6 characters.</p>
+              </div>
+
+              <lable for="pass" class="form-label mx-auto d-block" style="font-weight:600;width:289px;font-size: 14px;">Re-enter password</lable>
+              <input type="password" class="d-block mx-auto"  id="pass" required>
+            </div>
+            <button type="submit" class="btn mb-3 btn-submit mx-auto d-block foc" style="width:300px">Next step</button>
+            <div style="font-size:12px" class="d-flex flex-wrap d-block">
+                <p style="width:283px;" class="mx-auto mb-2">By creating an account, you agree to Amazon's <a href="#" class="detail">Conditions of Use</a> and <a href="#" class="detail">Privacy Notice</a>.</p>
+            </div>
+          </form>
+        <hr class="mx-auto line_break">
+       
+        <div class="mx-auto mt-3 mb-5 links-bottom">
+        <a href="#" class="detail">business customer service</a>
+        <a href="#" class="mx-3 detail">conditions of use</a>
+        <a href="#" class="detail">privacy policy </a>
+        <p style="color:rgb(78, 78, 78);" class="mt-2 mb-1">© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+        <script>
+            var e = document.getElementById("Eml");
+            e.value= localStorage.getItem('Email');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign in password</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="CSS/sign.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c0b2a44661.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <img Src="images/amazon_dark.png" class="rounded mx-auto d-block my-4" alt="logo" width="120px">
+        <form class="d-block mb-2 mx-auto generalwidth"style="height:285px" id="sign" action="Home.html">
+            <div class="mb-3">
+                <label class="d-block mx-auto mt-3 lead" style="font-weight:500; font-size: 28px; width:294px;">Sign in</label>
+                <div class="mx-auto mt-2" style="width:290px">
+                <p class="lead d-inline-block" style="font-size: 13px; font-weight: 400;" id="eml"></p>&nbsp
+                <a class="d-inline-block detail" href="Sign in_email.html">Change</a>
+                </div> 
+                <div class="mx-auto d-flex" style="width:290px; margin-bottom: -10px;">
+                    <p class="lead d-inline-block ps">Password</p>
+                    <p class="d-inline-block detail ms-auto">Forgot your password?</p>
+                    </div>           
+                <input type="password" class="d-block mx-auto"  id="pass" required>
+            </div>
+            <button type="submit" class="btn mb-2 btn-submit mx-auto d-block foc" style="width:300px" id="sin">Sign in</button>
+            <div class="mx-auto" style="width:280px">
+                <input type="checkbox">
+                <p class=" d-inline-block" style="font-size:13px">Keep me signed in.</p>
+                <p class=" d-inline-block detail">Details<i class="fa-solid fa-sort-down i_arrow ms-2"></i></p>
+            </div>
+            </div>
+          </form>
+
+        <hr class="mx-auto my-4 line_break">
+       
+        <div class="mx-auto mt-3 links-bottom">
+        <a href="#" class="detail">Conditions of Use</a>
+        <a href="#" class="mx-3 detail">Privacy Notice</a>
+        <a href="#" class="detail">Help</a>
+        <p style="color:rgb(78, 78, 78);" class="mt-2">© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+
+        <script>
+            var e = document.getElementById("eml");
+            e.innerHTML= localStorage.getItem('email');
+        </script>
+    </body>
+</html>

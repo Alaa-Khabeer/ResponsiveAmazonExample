@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Business Account</title>
+        <link href="CSS/business.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/c0b2a44661.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-scroll" style="background-color:#001f3c">
+    <div class="container">
+      <img src="images/amazon_business.png" class="navbar-brand" width="150px">
+      <button class="navbar-toggler"
+      type="button" 
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll" 
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      style="color:rgb(255, 255, 255);">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ms-auto" style="color:white; font-size:13px">
+          <li class="nav-item">
+            <span class="mx-1"><img src="images/filed1.png" width="21px"> ACCOUNT CREATION</span>
+          </li>
+          <li class="nav-item">
+            <span class="mx-1"><img src="images/empity2.png" width="22px"> BUSINESS DETAILS</span>
+          </li>
+          <li class="nav-item">
+            <span class="mx-1"><img src="images/empity3.png" width="22px"> FINISH</span>
+          </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+
+    <!--form-->
+    <div class="h-100">
+        <div class="container pt-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-11">
+        <div class="card">
+        <div class="card-body p-0">
+        <div class="row g-0">
+            
+        <!--left side-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="p-4 mx-2">
+            <p class="fs-4 fw-bold" style="color:#222d3a;">Let’s create your free Amazon Business account</p>
+        <div class="mb-4 pb-2">
+        <div class="form-outline">
+            <p class="ps-1 fs-6" for="email" style="color:#222d3a;">Enter the email you'd like to use for your business account</p>
+            <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter email" required/>           
+           
+            <a class="btn btn-submit mx-auto my-4 d-block form-control form-control-lg" href="Businass_sign up.html" id="get">Get started</a>
+            <p class="text-muted fst-italic">Make sure you have information about your organization to help us verify your business account faster.</p>
+            <a href="#" class="detail">Why is verification needed?<i class="fa-sharp fa-solid fa-chevron-down ms-1" style = "font-size: 12px;"></i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+ 
+        <!--right side-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-white" style="background-color:#001f3c">
+        <div class="p-4 mx-2">
+        <p class="fs-4 fw-bold">Added value for every type of organization</p>  
+        </div>
+        <div class="px-4 mx-2">
+            <img src="discount.svg" class="img">
+        
+        <div class="d-inline-block col-10">
+            <p class="fs-5 fw-bold">Buy more, save more</p>
+            <p class="fs-7">From commerce to education, save on over 60 million products when you buy two or more.</p>
+        </div>
+        </div>
+        <div class="px-4 mx-2">
+            <img src="people.svg" class="img">
+        
+        <div class="d-inline-block col-10">
+            <p class="fs-5 fw-bold">Connect your people</p>
+            <p class="fs-7">Create groups, share payment methods, and manage supplies across locations.</p>
+        </div>
+        </div>
+        <div class="px-4 mx-2">
+            <img src="businessPrime.svg" class="img">
+        
+        <div class="d-inline-block col-10">
+            <p class="fs-5 fw-bold">Get fast, FREE shipping with Business Prime</p>
+            <p class="fs-7">Just one Business Prime membership covers unlimited free shipping on eligible orders for your entire organization.</p>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center col-12">
+        <img src="images/buildings.svg">
+        </div>
+        <div class="d-flex justify-content-center py-2 col-12" style="background-color:#0d2c49">
+            <a href="#" class="text-white al">Learn more about Amazon Business</a>
+        </div>
+        </div></div></div></div></div></div></div></div>
+
+        <div class="mx-auto mt-3 links-bottom col-9">
+            <p>Need help? Contact 
+            <a href="#" class="text-decoration-none">business customer service</a>
+            . Read our <a href="#" class="text-decoration-none">conditions of use</a>
+             and <a href="#" class="text-decoration-none">privacy notice</a>.
+            </p>
+
+            <p class="mt-2 links-bottom">© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <script>
+        var c = document.getElementById("get");
+        var em = document.getElementById("email");
+        c.addEventListener('click', function() {
+        localStorage.setItem('Email', em.value);
+
+});
+    </script>
+    </body>
+</html>

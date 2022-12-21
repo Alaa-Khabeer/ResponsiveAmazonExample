@@ -1,0 +1,122 @@
+.btn-submit{
+    border: 1px solid #a18233;
+    background: linear-gradient(#f7dc9b, #f1c65c);
+}
+.btn-submit:hover{
+    background: linear-gradient(#f1c65c, #f7dc9b);
+}
+.btn-create{
+    border: 1px solid #8d9096;
+    background: linear-gradient(#ffffff, #d8d8d8);
+}
+.btn-create:hover{
+    background: linear-gradient(#d8d8d8, #ffffff);
+}
+
+.line_break{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0));
+  border: 0;
+  width:75%;
+  }
+  
+a{text-decoration: none;}
+
+
+.links-bottom{font-size:11px;
+width:370px;
+text-align: center;}
+
+.small-hr{
+    width:130px; 
+    color:rgb(134, 134, 134); 
+    display:inline-block;
+}
+.txt-break{
+    color:rgb(128, 127, 127); 
+    text-align: center;
+    font-size:11px; 
+    display:inline-block;
+    vertical-align:bottom;
+}
+details{
+    font-size:12px; 
+    color:rgb(70, 69, 69);
+}
+.generalwidth{
+  width:360px;
+}
+form{
+border: 1px solid rgb(219, 219, 219); 
+border-radius:5px; 
+}
+input[type=email]{
+width:295px;
+font-size: 14px;
+padding-left: 10px;
+padding-top: 2px;
+padding-bottom: 2px;
+}
+input[type=email]:focus{
+outline: #dd7301 solid 1px;
+border: none;
+box-shadow: 0px 0px 3px 3px #f8c592;
+border-radius: 2px;
+}
+input[type=text]{
+    width:295px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    }
+input[type=text]:focus{
+    outline: #dd7301 solid 1px;
+    border: none;
+    box-shadow: 0px 0px 3px 3px #f8c592;
+    border-radius: 2px;
+    }
+input[type=password]{
+    width:295px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    }
+input[type=password]:focus{
+    outline: #dd7301 solid 1px;
+    border: none;
+    box-shadow: 0px 0px 3px 3px #f8c592;
+    border-radius: 2px;
+    }
+.foc:focus{
+        outline: #dd7301 solid 1px;
+        box-shadow: 0px 0px 3px 3px #f8c592;
+        border-radius: 2px;
+        }
+.detail{
+    color:#0377d6;
+    font-size: 13px;
+}
+.i_arrow{
+    color:rgb(105, 105, 105);
+}
+.detail:hover{
+    color:#a35001;
+    text-decoration:underline;
+}
+.i_arrow:hover{
+    color:rgb(46, 46, 46);
+}
+.ps{
+    font-weight: 500;
+    font-size: 14px;
+}
+.note1{
+    font-size:13px;
+    width:270px;
+}
+.note2{
+    font-size:13px;
+    width:80px;
+    margin-left: -162px;
+}
